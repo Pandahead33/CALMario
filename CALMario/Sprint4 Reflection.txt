@@ -1,0 +1,9 @@
+﻿This burndown chart is certainly an interesting sight. The chart shows that the team went through two main periods of diligent work while the weekends tend to show little to no completed work resulting in the entirity of the chart being above the ideal trend from beginning to end. It appears that the project length was set up to be two days shorter than intended.
+ 
+To improve, the team will more regularly update work remaining times for designated tasks as well as ensuring the chart reflects the actual project length.
+
+Now onto what the team did well: the team continues to complete tasks on time with priority going to tasks that other individuals need completed in order to finish other tasks.  Refactoring continues to be productive where team members work together to improve individual code as well as address any communal issues. 
+ 
+Thanks for reading and testing!
+Best,
+The CALMario Team

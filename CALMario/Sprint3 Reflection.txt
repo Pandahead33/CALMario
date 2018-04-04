@@ -1,0 +1,34 @@
+The burndown for Sprint 3 looks slightly bloated. In fact, it heavily resembles the graph f(x) = log(7-x). Here is the burndown chart in ASCII: 
+
+          ....---...........`                                                                       
+        ``.-----------------...`                                                                    
+          .---------------------..`````````                                                         
+          .--------------------------------..`                                                      
+        ` .----------------------------------..``                                                   
+          .-------------------------------------..`                                                 
+     `    .----------------------------------------..`                                              
+     -    .-------------------------------------------..`                                           
+     -  ``.---------------------------------------------..`                                         
+     -    .------------------------------------------------.                                        
+     `    .-------------------------------------------------`                                       
+          .--------------------------------------------------.                                      
+          .---------------------------------------------------.                                     
+          .----------------------------------------------------.                                    
+          .-----------------------------------------------------.                                   
+        ``.------------------------------------------------------.    `````                         
+          .-------------------------------------------------------.`...----                         
+          .---------------------------------------------------------------.                         
+          .................................................................                         
+        .`.`    ``.`    ``.`    `````   `````   `````   `````   `````   ``.``   ````` 
+ 
+As you can tell, the chart goes fairly steady after an initial period of no work. The chart was exaggerated by the addition of weekends to the scheduling table and additional tasks added later on for refactoring and the like.
+ 
+To improve, the team will remove the weekends from the burndown since clearly little work gets done during it. It does not accurately reflect the effort put into the project. More time will be spent on planning as to not craft a chubby burndown again. 
+
+Now onto what the team did well: a seamless integration of components. Although everybody was working on vastly different aspects of the project, the modularity of the class structure allowed collaboration without significant hassle. This sprint was much larger than the other ones with large components like collision detection, movement, and level loading. 
+ 
+Thanks for reading and testing!
+Best,
+The CALMario Team
+ 
+ 

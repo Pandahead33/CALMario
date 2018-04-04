@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC4BE3AC-6CFA-4CE6-A954-76FE952C469B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CALMario</RootNamespace>
+    <AssemblyName>CALMario</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>BasicCorrectnessRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Camera\Camera.cs" />
+    <Compile Include="Camera\CameraUtility.cs" />
+    <Compile Include="Camera\ICamera.cs" />
+    <Content Include="Code Reviews\Sprint 4\CameraReview.txt" />
+    <Content Include="Code Reviews\Sprint 4\CommandFactoryReview.txt" />
+    <Compile Include="Collidables\ICollidable.cs" />
+    <Compile Include="CollisionDetection\CollisionDetector.cs" />
+    <Compile Include="Commands\AddEntityCommand.cs" />
+    <Compile Include="Commands\AddScoreCommand.cs" />
+    <Compile Include="Commands\ChangeGravityCommand.cs" />
+    <Compile Include="Commands\CommandUtility.cs" />
+    <Compile Include="Commands\CollectCoinCommand.cs" />
+    <Compile Include="Commands\CommandFactory.cs" />
+    <Compile Include="Commands\ChangeMarioCommand.cs" />
+    <Compile Include="Commands\AddItemCommand.cs" />
+    <Compile Include="Commands\DieCommand.cs" />
+    <Compile Include="Commands\MovementCommands\BumpBlockCommand.cs" />
+    <Compile Include="Commands\MovementCommands\MoveEntityHorizontallyCommand.cs" />
+    <Compile Include="Commands\MovementCommands\MoveEntityVerticallyCommand.cs" />
+    <Compile Include="Commands\MovementCommands\ChangeEntityMovingDirectionOnCollisionCommand.cs" />
+    <Compile Include="Commands\MovementCommands\SetEntityYAccelerationCommand.cs" />
+    <Compile Include="Commands\MovementCommands\SetEntityXAccelerationCommand.cs" />
+    <Compile Include="Commands\OneUpCommand.cs" />
+    <Compile Include="Commands\ShopCommand.cs" />
+    <Compile Include="Commands\PauseCommand.cs" />
+    <Compile Include="Commands\TryFireballCommand.cs" />
+    <Compile Include="Commands\MovementCommands\SetInputsCommand.cs" />
+    <Compile Include="Commands\MovementCommands\SetEntityYSpeedCommand.cs" />
+    <Compile Include="Commands\MovementCommands\SetEntityXSpeedCommand.cs" />
+    <Compile Include="Commands\MovementCommands\MoveMarioVerticallyCommand.cs" />
+    <Compile Include="Commands\MovementCommands\MoveMarioHorizontallyCommand.cs" />
+    <Compile Include="Commands\ExitCommand.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Commands\RemoveBlockCommand.cs" />
+    <Compile Include="Commands\RemoveEntityCommand.cs" />
+    <Compile Include="Commands\RemoveItemCommand.cs" />
+    <Compile Include="Commands\RemoveEnemyCommand.cs" />
+    <Compile Include="Commands\ResetCommand.cs" />
+    <Compile Include="Commands\WarpCommand.cs" />
+    <Compile Include="Commands\WinCommand.cs" />
+    <Compile Include="Controllers\ControllerUtility.cs" />
+    <Compile Include="Controllers\IController.cs" />
+    <Compile Include="Controllers\GamepadController.cs" />
+    <Compile Include="Controllers\KeyboardController.cs" />
+    <Compile Include="Controllers\MarioInputs.cs" />
+    <Compile Include="DisplayLoaderFiles\DisplayLoaderFilesUtility.cs" />
+    <Compile Include="DisplayLoaderFiles\IScreen.cs" />
+    <Compile Include="DisplayLoaderFiles\ScreenKernel.cs" />
+    <Compile Include="DisplayLoaderFiles\WinScreenLoader.cs" />
+    <Compile Include="DisplayLoaderFiles\GameOverScreenLoader.cs" />
+    <Compile Include="Entities\Blocks\BackgroundBlock.cs" />
+    <Compile Include="Entities\Blocks\BlockKernel.cs" />
+    <Compile Include="Entities\Blocks\BlockState\BackgroundBlockState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\BrickBlockState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\FlagpoleRibbonState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\FlagpoleState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\KillMarioBlockState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\PipeBaseState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\PipeState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\FloorState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\HitBlockState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\IBlockState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\InvisibleBlockState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\QuestionBlockState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\StoreBlockState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\NullBlockState.cs" />
+    <Compile Include="Entities\Blocks\BlockState\WarpPipeState.cs" />
+    <Compile Include="Entities\Blocks\BlocksUtility.cs" />
+    <Compile Include="Entities\Blocks\Flagpole.cs" />
+    <Compile Include="Entities\Blocks\FlagpoleRibbon.cs" />
+    <Compile Include="Entities\Blocks\KillMarioBlock.cs" />
+    <Compile Include="Entities\Blocks\PipeBaseBlock.cs" />
+    <Compile Include="Entities\Blocks\PipeBlock.cs" />
+    <Compile Include="Entities\Blocks\FloorBlock.cs" />
+    <Compile Include="Entities\Blocks\IBlock.cs" />
+    <Compile Include="Entities\Blocks\BrickBlock.cs" />
+    <Compile Include="Entities\Blocks\InvisibleBlock.cs" />
+    <Compile Include="Entities\Blocks\QuestionBlock.cs" />
+    <Compile Include="Entities\Blocks\StoreBlock.cs" />
+    <Compile Include="Entities\Blocks\HitBlock.cs" />
+    <Compile Include="Entities\Blocks\RewardType.cs" />
+    <Compile Include="Entities\Blocks\WarpPipeBlock.cs" />
+    <Compile Include="Entities\Enemies\EnemiesUtility.cs" />
+    <Compile Include="Entities\Enemies\EnemyKernel.cs" />
+    <Compile Include="Entities\Enemies\Goomba.cs" />
+    <Compile Include="Entities\Enemies\IEnemy.cs" />
+    <Compile Include="Entities\Enemies\Koopa.cs" />
+    <Compile Include="Entities\Enemies\KoopaShell.cs" />
+    <Compile Include="Entities\IEntity.cs" />
+    <Compile Include="Entities\Items\AutocollectCoin.cs" />
+    <Compile Include="Entities\Items\Coin.cs" />
+    <Compile Include="Entities\Items\ItemsUtility.cs" />
+    <Compile Include="Entities\Items\FireFlower.cs" />
+    <Compile Include="Entities\Items\ICollectable.cs" />
+    <Compile Include="Entities\Items\IItem.cs" />
+    <Compile Include="Entities\Items\ItemKernel.cs" />
+    <Compile Include="Entities\Items\Jetpack.cs" />
+    <Compile Include="Entities\Items\OneUpMushroom.cs" />
+    <Compile Include="Entities\Items\RedMushroom.cs" />
+    <Compile Include="Entities\Items\Star.cs" />
+    <Compile Include="Entities\Mario\Fireball.cs" />
+    <Compile Include="Entities\Mario\GravityMultiplier.cs" />
+    <Compile Include="Entities\Mario\IMarioPhysicsData.cs" />
+    <Compile Include="Entities\Mario\IMarioPowerupStateMachine.cs" />
+    <Compile Include="Entities\Mario\GhostMario.cs" />
+    <Compile Include="Entities\Mario\IntangibleMario.cs" />
+    <Compile Include="Entities\Mario\MarioState\MarioStateUtility.cs" />
+    <Compile Include="Entities\Mario\MarioUtility.cs" />
+    <Compile Include="Entities\Mario\MarioPhysicsData.cs" />
+    <Compile Include="Entities\Mario\MarioState\JumpingState.cs" />
+    <Compile Include="Entities\Mario\MarioState\GroundedMovementState.cs" />
+    <Compile Include="Entities\Mario\SpeedStruct.cs" />
+    <Compile Include="Entities\Mario\StarMarioPowerupStateMachine.cs" />
+    <Compile Include="Entities\Mario\NullPowerupStateMachine.cs" />
+    <Compile Include="Entities\Mario\StarMario.cs" />
+    <Compile Include="Entities\Mario\DeadMario.cs" />
+    <Compile Include="Entities\Mario\IMario.cs" />
+    <Compile Include="Entities\Mario\MarioPowerupStateMachine.cs" />
+    <Compile Include="Entities\Mario\MarioState\IMarioMovementState.cs" />
+    <Compile Include="Entities\Mario\MarioState\NullMovementState.cs" />
+    <Compile Include="Entities\Mario\MarioState\RightJump.cs" />
+    <Compile Include="Entities\Mario\MarioState\LeftJump.cs" />
+    <Compile Include="Entities\Mario\MarioState\RightRun.cs" />
+    <Compile Include="Entities\Mario\MarioState\RightCrouch.cs" />
+    <Compile Include="Entities\Mario\MarioState\RightIdle.cs" />
+    <Compile Include="Entities\Mario\MarioState\LeftRun.cs" />
+    <Compile Include="Entities\Mario\MarioState\LeftIdle.cs" />
+    <Compile Include="Entities\Mario\MarioState\LeftCrouch.cs" />
+    <Compile Include="Entities\Mario\Mario.cs" />
+    <Compile Include="Entities\Mario\PowerupStateType.cs" />
+    <Compile Include="Entities\Projectiles\IProjectile.cs" />
+    <Compile Include="Entities\Projectiles\ProjectileKernel.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="GameStats.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Graphics\DeadMarioSprite.cs" />
+    <Compile Include="Graphics\GraphicsUtility.cs" />
+    <Compile Include="Graphics\InvisibleBlockSprite.cs" />
+    <Compile Include="Graphics\EmptySprite.cs" />
+    <Compile Include="Graphics\AnimatedSprite.cs" />
+    <Compile Include="Graphics\LeftWalkingFireMarioSprite.cs" />
+    <Compile Include="Graphics\LeftWalkingMarioSprite.cs" />
+    <Compile Include="Graphics\LeftWalkingSmallMarioSprite.cs" />
+    <Compile Include="Graphics\NonAnimatedSprite.cs" />
+    <Compile Include="Graphics\ISprite.cs" />
+    <Compile Include="Graphics\RightWalkingFireMarioSprite.cs" />
+    <Compile Include="Graphics\RightWalkingMarioSprite.cs" />
+    <Compile Include="Graphics\RightWalkingSmallMarioSprite.cs" />
+    <Compile Include="LevelManager.cs" />
+    <Compile Include="Physics\PhysicsUtility.cs" />
+    <Compile Include="GameUtility.cs" />
+    <Compile Include="GhostPlayerInputs.cs" />
+    <Compile Include="Sounds\ISound.cs" />
+    <Compile Include="Sounds\SoundsUtility.cs" />
+    <Compile Include="Sounds\SoundFactory.cs" />
+    <Compile Include="Sounds\SoundFX.cs" />
+    <Compile Include="Sounds\BackgroundMusic.cs" />
+    <Compile Include="DisplayLoaderFiles\RemainingLivesScreenLoader.cs" />
+    <Compile Include="IGameStats.cs" />
+    <Compile Include="Physics\IPhysics.cs" />
+    <Compile Include="Physics\NewtonianPhysics.cs" />
+    <Compile Include="DisplayLoaderFiles\HUDLoader.cs" />
+    <Compile Include="Side.cs" />
+    <Compile Include="LevelLoader.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Graphics\SpriteFactory.cs" />
+    <Compile Include="Testing\TestCommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Code Reviews\Sprint 3\CollisionDetectorReview.txt" />
+    <Content Include="Code Reviews\Sprint 3\ICollidableReadability.txt" />
+    <Content Include="Code Reviews\Sprint 3\LevelLoaderReadability.txt" />
+    <Content Include="Code Reviews\Sprint 3\MMHCReadability.txt" />
+    <Content Include="Code Reviews\Sprint 3\MMHCReview.txt" />
+    <Content Include="Code Reviews\Sprint 3\TestCommandReadability.txt" />
+    <Content Include="Code Reviews\Sprint 3\LevelLoaderReview.txt" />
+    <Content Include="Code Reviews\Sprint 3\TestCommandReview.txt" />
+    <Content Include="Code Reviews\Sprint 4\BlockKernelReadability.txt" />
+    <Content Include="Code Reviews\Sprint 4\CameraReadability.txt" />
+    <Content Include="Code Reviews\Sprint 4\CommandFactoryReadability.txt" />
+    <Content Include="Code Reviews\Sprint 4\FireballReview.txt" />
+    <Content Include="Code Reviews\Sprint 4\FireballReadability.txt" />
+    <Content Include="Code Reviews\Sprint 4\MarioReview.txt" />
+    <Content Include="Code Reviews\Sprint 5\Flagpole Code Quality Review.txt" />
+    <Content Include="Code Reviews\Sprint 5\HUDLoaderReadability.txt" />
+    <Content Include="Code Reviews\Sprint 5\LevelManagerCodeQualityReview.txt" />
+    <Content Include="Code Reviews\Sprint 5\SoundFactoryCodeQualityReview.txt" />
+    <Content Include="Code Reviews\Sprint 5\GameStatsReadabilityReview.txt" />
+    <Content Include="Code Reviews\Sprint 5\SoundFactoryReadabilityReview.txt" />
+    <Content Include="Code Reviews\Sprint 5\Flagpole Readability.txt" />
+    <Content Include="Code Reviews\Sprint 5\HUDLoaderCodeQualityReview.txt" />
+    <Content Include="Code Reviews\Sprint 6\GravityMultiplier DOUBLEReview.txt" />
+    <Content Include="Code Reviews\Sprint 6\Jetpack CodeQuality.txt" />
+    <Content Include="Code Reviews\Sprint 6\GhostMario CodeQuality.txt" />
+    <Content Include="Code Reviews\Sprint 6\Jetpack Readability.txt" />
+    <Content Include="Code Reviews\Sprint 6\GhostMario Readability.txt" />
+    <Content Include="Code Reviews\Sprint 6\StoreBlock CodeQuality.txt" />
+    <Content Include="Code Reviews\Sprint 6\StoreBlock Readability.txt" />
+    <Content Include="Content\BrickBlock.png" />
+    <Content Include="Content\Coin.png" />
+    <Content Include="Content\EnemySprites1.png" />
+    <Content Include="Content\FireballSprites.png" />
+    <Content Include="Content\FireFlower.png" />
+    <Content Include="Content\FlagPole.png" />
+    <Content Include="Content\FlagPoleRibbon.png" />
+    <Content Include="Content\floorBlock.png" />
+    <Content Include="Content\Goomba.png" />
+    <Content Include="Content\jetpack.png" />
+    <Content Include="Content\Koopa.png" />
+    <Content Include="Content\KoopaShell.png" />
+    <Content Include="Content\LevelBackgrounds.png" />
+    <Content Include="Content\MarioSprites.png" />
+    <Content Include="Content\OneUpMushroom.png" />
+    <Content Include="Content\Pipe.png" />
+    <Content Include="Content\QuestionBlock.png" />
+    <Content Include="Content\SFX\bgmusic.mp3" />
+    <Content Include="Content\SFX\fireballNoise.wav" />
+    <Content Include="Content\SFX\goDownPipe.wav" />
+    <Content Include="Content\SFX\hitBlock.wav" />
+    <Content Include="Content\SFX\jump.wav" />
+    <Content Include="Content\SFX\levelComplete.wav" />
+    <Content Include="Content\SFX\marioDamaged.wav" />
+    <Content Include="Content\SFX\marioDeath.wav" />
+    <Content Include="Content\SFX\obtainCoin.wav" />
+    <Content Include="Content\SFX\pauseNoise.wav" />
+    <Content Include="Content\SFX\powerUp.wav" />
+    <Content Include="Content\SFX\powerUpAppears.wav" />
+    <Content Include="Content\SFX\shellHIt.wav" />
+    <Content Include="Content\SFX\star.mp3" />
+    <Content Include="Content\SFX\stompOnEnemy.wav" />
+    <Content Include="Content\standingMario.bmp" />
+    <Content Include="Content\SuperMushroom.png" />
+    <Content Include="Content\SuperStar.png" />
+    <Content Include="Content\UsedBlock.png" />
+    <Content Include="Icon.ico" />
+    <Content Include="README.txt" />
+    <Content Include="Sprint2 Reflection.txt" />
+    <Content Include="Sprint3 Reflection.txt" />
+    <Content Include="Sprint4 Reflection.txt" />
+    <Content Include="Sprint6 Reflection.txt" />
+    <Content Include="Sprint5 Reflection.txt" />
+    <Content Include="VSO Screenshots\Sprint 6\Sprint6Part1.png" />
+    <Content Include="VSO Screenshots\Sprint 6\Sprint6Part2.png" />
+    <Content Include="VSO Screenshots\Sprint 6\Sprint6Part3.png" />
+    <Content Include="VSO Screenshots\Sprint4Part1.png" />
+    <Content Include="VSO Screenshots\Sprint4Part2.png" />
+    <Content Include="VSO Screenshots\Sprint4Part3.png" />
+    <Content Include="VSO Screenshots\Sprint4Part4.png" />
+    <Content Include="VSO Screenshots\Sprint4Part5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.manifest" />
+    <EmbeddedResource Include="levelOne.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Code Metrics\Sprint4CodeMetric.xlsx" />
+    <None Include="Content\HUDFont.spritefont" />
+    <EmbeddedResource Include="underground.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="store.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="returnToLevelOne.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

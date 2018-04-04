@@ -1,0 +1,8 @@
+﻿The CALMario team went full steam ahead into Sprint 2, instantly knocking the line beneath the ideal trend line. However, the weekend put on the brakes. As is evident from the burndown chart, the team clearly has a tendency to do work in large increments- and also get distracted coming back from the weekend. Due to this, the chart bubbles upward into a near plateau around midway through the Sprint- but everyone managed to get their work done in a timely fashion around midweek.
+ 
+As a part of the Agile process, sometimes tasks are updated after initial planning and this added workload that inflated the burndown chart slightly. Besides that, the only real critique here is that on future projects that are more involved the team should get back on the track quicker.
+ 
+To improve, our next initial planning stage for Sprint 3 will be more thorough and try to encompass potential future implementation needs. In addition, team members will be more vigilant in updating whether their tasks are in progress or completed. Both of these will lead to a more useful burndown chart and more efficient communication. Additionally, the team will try not to get derailed by the weekend.
+ 
+Best,
+The CALMario Team

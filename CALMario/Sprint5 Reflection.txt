@@ -1,0 +1,3 @@
+This time, the breakdown chart went quite swimmingly. It should be in the VSO Screenshot folder, for your viewing pleasure. Though there was a bit of a bulge at the beginning, for several days we were beneath the ideal trend line. The initial implementation made refactoring an interesting delight. 
+
+The team has finally hit their stride with their strongest performance yet. Perhaps Sprint 6, the final one, will have the best looking burndown chart of all time. To improve, the team can perhaps have a group coding session where they stick parts together earlier. Often roadblocks are because a part of the code is inaccessible due to lack of knowledge or that it does not exist yet. 
