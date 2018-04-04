@@ -1,0 +1,24 @@
+﻿Author of the code review: 
+Adam Chen
+
+Date of the code review: 
+July 18th, 2017
+
+Sprint number: 
+5
+
+Name of the .cs file being reviewed: 
+Flagpole.cs
+
+Author of the .cs file being reviewed: 
+Cole Coulter
+
+Number of minutes taken to complete the review:
+5 minutes
+
+Specific comments on code quality:
+Implements an interface, so is flexible; no additional definitions over what is required by the interface. 
+As such, there's very little that could go wrong.
+Uses the command pattern for its collision reaction, a gain reducing dependencies/knowledge/coupling.
+To further reduce coupling, Draw delegates to Sprite's underlying implementation.
+Physics is privately set, so there's more information hiding there.

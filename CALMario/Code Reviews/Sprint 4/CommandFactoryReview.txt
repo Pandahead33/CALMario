@@ -1,0 +1,16 @@
+﻿Author of the code review: Lucas Puskaric
+
+Date of the code review: 7/5/17
+
+Sprint number: 4
+
+Name of the.cs file being reviewed: CommandFactory.cs
+
+Author of the.cs file being reviewed: Adam Chen
+
+Specific comments on code quality: The code does well despite the negatives of using a factory such as long code and more coupling. However, it is cohesive and everything is now
+within a single file. There are no magic numbers or the like, so that is better than the initial SpriteFactory for sure. However, some commands are not included in the factory yet, which
+sort of makes the idea they are all in one place confusing. 
+
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change:  The factory design pattern was made to perfection, however it is debatable whether a CommandFactory is actually necessary.
+Though it encapsulates the commands into their own space- it seems unlike sprites. Sprites not only have their own . The benefit is that it is all in one place. Just food for thought. 

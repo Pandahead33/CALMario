@@ -1,0 +1,23 @@
+﻿Author of the code review: 
+Melinda Studans
+
+Date of the code review: 
+6/20/17
+
+Sprint number: 
+3
+
+Name of the .cs file being reviewed: 
+LevelLoader.cs
+
+Author of the .cs file being reviewed: 
+Lucas Puskaric
+
+Specific comments on code quality: 
+While the switch statement inside the convertCharacterToBlock method is readable, it takes up a large amount of space, and 
+it makes the method quite long - about 50 lines. A dictionary would be a more concise method for handling this.
+There are a decent amount of 'magic numbers' in the file.
+File has good, simple structure and a clear, single purpose. 
+
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change:
+Adding more sprites or objects to the game would be fairly easy to handle, since it would just be a matter of adding more switch cases (or dictionary entries).

@@ -1,0 +1,16 @@
+﻿Author of Code Review: Adam Chen
+
+Date of Code Review: 16 June, 2017
+
+Sprint #: 3
+
+Name of the .cs file being reviewed: TestCommand.cs
+
+Author of the .cs file being reviewed: Cole Coulter
+
+Number of minutes taken to complete the review: 3
+
+Specific comments on what is readable and what is not:
+Each test is well isolated. As of this review, actual development of the tests must still be done, but the structure is clear; 
+tests are carried out with the game being reset between tests.
+It's constructed like most commands, taking a single Game1 parameter. The use of the ICommand interface makes its use clear.

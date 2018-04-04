@@ -1,0 +1,23 @@
+﻿Author of the code review: 
+Adam Chen
+
+Date of the code review: 
+July 27, 2017
+
+Sprint number: 
+6
+
+Name of the .cs file being reviewed: 
+GhostMario.cs
+
+Author of the .cs file being reviewed: 
+Melinda Studans
+
+Number of minutes taken to complete the review:
+10 minutes
+
+Specific comments on what is readable and what is not:
+Provides minimal getter/setter implementation for IMario's properties. 
+Typechecks in CollideWithBlock make it a bit unclear what's able to collide and what isn't. This is exacerbated by the nested conditional.
+Other than that is well formats and easy to read and scroll through (there's not much else to it).
+

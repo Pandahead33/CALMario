@@ -1,0 +1,35 @@
+﻿Author of the code review: 
+Cole Coulter
+
+Date of the code review: 
+18 July 2017
+
+Sprint number: 
+5
+
+Name of the .cs file being reviewed: 
+LevelManager.cs
+
+Author of the .cs file being reviewed: 
+Adam Chen
+
+Number of minutes taken to complete the review:
+15
+
+Specific comments on code quality:
+The purpose of this class is to reduce the amount of code
+and functionality present in the main Game1 class.  As such
+the function contained in this class serve very different 
+purposes but all relate to game functionality in some way.
+These methods are clear, concise, and independent of each 
+other.  Only variables that need to be public are public
+with the remaining variables being accessible only within
+the class.
+
+A hypothetical change that this class could easily support 
+would be nearly any additional functionality relevant to 
+the Game1 class.  Because this class is so close to the Game1
+class, much of the functionality of Game1 is easily accessed 
+and manipulated from this class.  For example, a rewind function
+could be added to LevelManager with virtually no extra access 
+or permission needed.

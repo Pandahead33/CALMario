@@ -1,0 +1,30 @@
+Author of the code review: 
+Lucas Puskaric
+
+Date of the code review: 
+16 July 2017
+
+Sprint number: 
+5
+
+Name of the .cs file being reviewed: 
+HUDLoader.cs
+
+Author of the .cs file being reviewed: 
+Melinda Studans
+
+Number of minutes taken to complete the review:
+15
+
+Specific comments on code quality:
+Though the HUDLoader is one of the more verbose classes,
+the functionality it contains is necessary. Whenever HUD or
+other on-screen graphical elements are involved- it takes a lot of code.
+In addition, the code is even bigger due to the fact there are not easy
+to replicate parts for HUDs in Monogame.
+
+Some of the code is simplified with additional methods for increased
+cohesion. I'm not one hundred percent positive all of the private fields 
+are needed since some are constants in the DisplayLoaderFilesUtility.
+I assume this was made beforehand. Other than that, great class!
+

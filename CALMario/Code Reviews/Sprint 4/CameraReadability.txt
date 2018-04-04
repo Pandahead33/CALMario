@@ -1,0 +1,23 @@
+﻿Author of the code review: 
+Adam Chen
+
+Date of the code review: 
+7/5/17
+
+Sprint number: 
+4
+
+Name of the .cs file being reviewed: 
+Camera.cs
+
+Author of the .cs file being reviewed: 
+Lucas Puskaric
+
+Number of minutes taken to complete the review:
+5 minutes
+
+Specific comments on what is readable and what is not:
+Names do not follow convention (properties not PascalCase)
+A few of the steps in creating the transform matrix seem unnecessary, such as multiplying by a rotation of 0.
+It's not clear why base.Update is commented out.
+A few magic numbers in update.

@@ -1,0 +1,16 @@
+﻿Author of the Code Review: Cole Coulter
+
+Date of the Code Review: 5 July, 2017
+
+Sprint #: 4
+
+Name of the .cs file being reviewed: Mario.cs
+
+Author of the .cs file being reviewed: Melinda Studans
+
+Specific comments on code quality: Structure of class is clear and relatively well-organized.
+Like-methods are grouped together, such as collision methods, and coupling is low when possible
+and reasonable.  Overall, code is clean and well-written.
+
+A hypothetical change to make to the game: Any changes to the level design, items, enemies or
+anything mario collides with would leave this class virtually unchanged.

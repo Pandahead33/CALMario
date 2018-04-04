@@ -1,0 +1,23 @@
+﻿Author of the code review: 
+Adam Chen
+
+Date of the code review: 
+7/5/17
+
+Sprint number: 
+4
+
+Name of the .cs file being reviewed: 
+Camera.cs
+
+Author of the .cs file being reviewed: 
+Lucas Puskaric
+
+Specific comments on code quality: 
+I like that many aspects are set dynamically, such as the window height.
+All calculations are encapsulated in a single Matrix operation, so it's simple to change and maintain.
+A few magic numbers in the constructor, but the variable names make it clear what their purpose is.
+
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change: 
+Introduction of new ares, such as underground.
+Since we can manually set where the camera is, these transitions seem easy to implement, and if they required different camera work (such as no vertical scrolling), using the ICamera interface makes that change easy.

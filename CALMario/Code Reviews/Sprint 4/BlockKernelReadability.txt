@@ -1,0 +1,25 @@
+﻿Author of the code review: 
+Cole Coulter
+
+Date of the code review: 
+June 30, 2017
+
+Sprint number: 
+4
+
+Name of the .cs file being reviewed: 
+BlockKernel.cs
+
+Author of the .cs file being reviewed: 
+Melinda Studans
+
+Number of minutes taken to complete the review:
+10 minutes
+
+Specific comments on what is readable and what is not:
+I don't think there is anything particular about this code
+that is not easily readable.  The only thing that really
+takes a second to understand is the if statement in the
+CollideWithMario method, but even that is pretty straightforward.
+The names make it obvious what you're working with and each
+line of code is clear and concise.

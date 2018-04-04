@@ -1,0 +1,37 @@
+Now two in one! 
+
+Author of the code review: 
+Lucas Puskaric
+
+Date of the code review: 
+July 24 and 27th, 2017
+
+Sprint number: 
+6
+
+Name of the .cs file being reviewed: 
+GravityMultiplier.cs
+
+Author of the .cs file being reviewed: 
+Cole Coulter
+
+Number of minutes taken to complete the review: 20
+
+
+Specific comments on what is readable and what is not:
+GravityMultiplier is a cohesive and concise class that clearly displays what it does with the gravity of the game. 
+Clearly it replicates different types of planets gravity in the game based on the game. 
+Nothing is too verbose. 
+
+Specific comments on code quality:
+It is nearly a perfect class. It is possible to take out some of the floats as constants in a separate game file like
+in the different Utility clases. Some of the code may seem a bit redundant 
+
+
+A hypothetical change to make to the game related to file being reviewed and how the current 
+implementation could or could not easily support that change:
+Perhaps a GravityUtility class would be overkill but it could also encapsulate the Gravity and
+then presumably this class would never have to be modified and Gravity types could be kept separately.
+
+
+

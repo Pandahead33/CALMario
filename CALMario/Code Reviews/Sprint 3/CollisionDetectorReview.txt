@@ -1,0 +1,17 @@
+﻿Author of the Code Review: Cole Coulter
+
+Date of the Code Review: 20 June, 2017
+
+Sprint #: 3
+
+Name of the .cs file being reviewed: CollisionDetector.cs
+
+Author of the .cs file being reviewed: Melinda Studans
+
+Specific comments on code quality: Structure of class is clear and well-organized. If you
+have knowledge of the project, understanding this code is fairly straightforward.
+
+A hypothetical change to make to the game: Any changes to the layout of the level, adding enemies,
+adding items, changing the size of enemies or items, or any changes to desired collision response
+would require minor modifications, if any, to the code.  The code is written well as to avoid dependencies
+on other classes that might need to be changed.

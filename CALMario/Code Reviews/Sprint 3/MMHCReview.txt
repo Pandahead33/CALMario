@@ -1,0 +1,15 @@
+Author of the code review: Lucas Puskaric
+ 
+Date of the code review: 18 June 2017
+ 
+Sprint number: 3
+Original Name of .cs File Being Reviewed: MoveMarioHorizontallyCommand.cs
+Name of the .cs file being reviewed: CommandFactory.cs
+ 
+Author of the .cs file being reviewed: Adam Chen
+ 
+Specific comments on code quality: I originally reviewed MoveMarioHorizontally, but since it was deemed to be unnecessary to change I decided to review CodeFactory instead. Clear structure, incredibly readable. It encapsulates a lot of data that was previously just hanging around. It also does this in a way that is modular and cohesive. Additionally, the coupling is as good as it could possibly get.  
+ 
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change:
+Perhaps a dictionary could streamline this further but seems unnecessary. This class is, for all practical purposes, perfection. 
+ 

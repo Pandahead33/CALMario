@@ -1,0 +1,24 @@
+﻿Author of the code review: 
+Cole Coulter
+
+Date of the code review: 
+7/14/17
+
+Sprint number: 
+5
+
+Name of the .cs file being reviewed: 
+GameStats.cs
+
+Author of the .cs file being reviewed: 
+Adam Chen
+
+Number of minutes taken to complete the review:
+10 minutes
+
+Specific comments on what is readable and what is not:
+This class is extremely easy to understand because of
+its simplicity and the fact that this logic was put
+in a separate class rather than the Game1 class. The
+properties are descriptive and follow proper conventions
+for properties. 

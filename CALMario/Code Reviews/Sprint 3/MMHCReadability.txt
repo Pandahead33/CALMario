@@ -1,0 +1,21 @@
+Author of Code Review: Lucas Puskaric
+ 
+Date of Code Review: 15 June 2017
+ 
+Sprint #: 3
+ 
+Name of .cs File Being Reviewed: MoveMarioHorizontallyCommand.cs
+ 
+Author of .cs File Being Reviewed: Adam Chen 
+ 
+Number of Minutes Taken to Complete Review: 15
+ 
+Specific comments on what is readable and what is not:
+Are all those imports used? 
+ 
+This is an expansion off of the earlier command sequence and creates movement. Some of the variables names are a little unclear. I assume pixels refers to how much it is moved by. Perhaps a name such as “moveBy” or velocity may be more descriptive for later use. 
+ 
+Is changing the location directly the best way? Does both player and game have to both be used?  I suppose the current way the code is set up but there may be a way to encapsulate it further. 
+ 
+Nevertheless, it is very readable and obviously works. 
+ 

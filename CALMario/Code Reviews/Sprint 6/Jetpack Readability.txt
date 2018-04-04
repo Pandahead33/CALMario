@@ -1,0 +1,23 @@
+﻿Author of the code review: 
+Melinda Studans
+
+Date of the code review: 
+July 27, 2017
+
+Sprint number: 
+6
+
+Name of the .cs file being reviewed: 
+Jetpack.cs
+
+Author of the .cs file being reviewed: 
+Adam Chen
+
+Number of minutes taken to complete the review:
+10 minutes
+
+Specific comments on what is readable and what is not:
+This class is quite readable due to the fact that it mostly utilizes the ItemKernel class.
+Furthermore, the collision response method (CollectedBy) is very easy to understand since it is using the IMarioPowerupStateMachine
+interface to provide the functionality for what happens after gaining the jetpack item.
+

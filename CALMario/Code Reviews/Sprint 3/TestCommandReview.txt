@@ -1,0 +1,14 @@
+﻿Author of the code review: Adam Chen
+
+Date of the code review: 6/20/17
+
+Sprint number: 3
+
+Name of the .cs file being reviewed: TestCommand.cs
+
+Author of the .cs file being reviewed: Cole Coulter
+
+Specific comments on code quality: Structure of tests is clear. Resets and Asserts seem repeated a lot; possibly could abstract that to one process on a test.
+
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change:
+Changing the level. Since the coords are hardcoded this isn't an easily supportable change. Perhaps instead create a new initialization for the game world, and spawn in your own goombas/mario/etc?
